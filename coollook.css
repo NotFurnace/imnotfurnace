@@ -1,0 +1,93 @@
+body
+{
+    background-image: url('bg.png');
+}
+
+#headr
+{
+    font-size: 55px;
+}
+
+.introduction
+{
+    margin: auto;
+    width: 600px;
+    height: 1110px;
+    background-color: rgba(0, 0, 0, 0.382);
+    color: white;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    border-radius: 25px;
+    font-size: 110%
+}
+
+.introduction2
+{
+    margin: auto;
+    width: 600px;
+    height: 900px;
+    background-color: rgba(0, 0, 0, 0.382);
+    color: white;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    border-radius: 25px;
+    font-size: 110%
+}
+
+.more
+{
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.382);
+    color: white;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    border: 5px solid #ffffff;
+    border-radius: 25px;
+    font-size: 110%
+}
+
+.whityImg
+{
+    animation: squeeze 0.4s infinite;
+}
+
+@keyframes squeeze {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+}
+
+:root {
+    --width: 20%;
+    --x-speed: 5s;
+    --y-speed: 1s;
+    --transition-speed: 1s;
+  }
+  
+  .el { 
+    width: var(--width);
+    height: var(--width);
+  }
+  
+  .x {
+    animation: x var(--x-speed) linear infinite alternate;
+  }
+  .y {
+    animation: y var(--y-speed) linear infinite alternate;
+  }
+  
+  @keyframes x {
+    100% {
+      transform: translateX(calc(32.6vw - var(--width)));
+    }
+  }
+  @keyframes y {
+    100% {
+      transform: translateY(calc(35.5vh - var(--width)));
+    }
+  }
